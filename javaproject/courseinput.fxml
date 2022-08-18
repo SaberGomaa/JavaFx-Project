@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="873.0" style="-fx-background-color: #18252f;" stylesheets="@studentInput.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.courseInputController">
+   <children>
+      <HBox prefHeight="82.0" prefWidth="873.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student Data">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Text>
+            <HBox prefHeight="60.0" prefWidth="504.0" />
+            <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exit.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="600.0" style="-fx-text-fill: white;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :" wrappingWidth="302.7568359375">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="txtID" editable="false" prefHeight="75.0" prefWidth="520.0" style="-fx-background-color: #0099ff; -fx-text-fill: white;">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name:" wrappingWidth="302.3076171875">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="txtName" prefHeight="75.0" prefWidth="520.0" style="-fx-text-fill: white; -fx-background-color: #0099ff;">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnSave" mnemonicParsing="false" onMouseClicked="#onsave" prefHeight="80.0" prefWidth="250.0" text="Add">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Black" size="1.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnClear" mnemonicParsing="false" onMouseClicked="#onClear" prefHeight="80.0" prefWidth="250.0" text="Clear">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
