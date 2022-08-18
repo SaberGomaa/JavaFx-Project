@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #18252f;" stylesheets="@table.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.courseTableviewControlleradd">
+   <children>
+      <TableView fx:id="tblviewcourse" layoutX="40.0" layoutY="175.0" prefHeight="400.0" prefWidth="642.0" scaleShape="false" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="115.0">
+        <columns>
+          <TableColumn id="id" fx:id="id" maxWidth="180.0" minWidth="321.0" prefWidth="321.0" style="-fx-alignment: center; -fx-font-size: 18;" text="ID" />
+          <TableColumn id="name" fx:id="name" maxWidth="180.0" minWidth="321.0" prefWidth="321.0" style="-fx-alignment: center; -fx-font-size: 18;" text="Name" />
+        </columns>
+      </TableView>
+      <Pane layoutX="99.0" layoutY="87.0" prefHeight="5.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="87.0" />
+      <Text fill="WHITE" layoutX="24.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Courses" AnchorPane.leftAnchor="40.0">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="btnAdd" fitHeight="56.0" fitWidth="52.0" layoutX="40.0" layoutY="103.0" onMouseClicked="#getAddView" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0">
+         <image>
+            <Image url="@../images/add-user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="btnRefreh" fitHeight="56.0" fitWidth="52.0" layoutX="109.0" layoutY="103.0" onMouseClicked="#getRefresh" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="120.0">
+         <image>
+            <Image url="@../images/update-user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="743.0" layoutY="14.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/exit.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

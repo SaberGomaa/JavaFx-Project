@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #18252f;" stylesheets="@table.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.courseTableviewControllerSearch">
+   <children>
+      <TableView fx:id="tblviewstudent" layoutX="40.0" layoutY="175.0" prefHeight="400.0" prefWidth="716.0" scaleShape="false">
+        <columns>
+          <TableColumn id="id" fx:id="id" maxWidth="180.0" minWidth="366.0" prefWidth="366.0" style="-fx-alignment: center; -fx-font-size: 18;" text="ID" />
+          <TableColumn id="name" fx:id="name" maxWidth="180.0" minWidth="366.0" prefWidth="366.0" style="-fx-alignment: center; -fx-font-size: 18;" text="Name" />
+        </columns>
+      </TableView>
+      <Pane layoutX="99.0" layoutY="87.0" prefHeight="5.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="87.0" />
+      <Text fill="WHITE" layoutX="24.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search for Course " AnchorPane.leftAnchor="40.0">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="btnSearchKey" fitHeight="56.0" fitWidth="52.0" layoutX="104.0" layoutY="111.0" onMouseClicked="#getSearch" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="104.0">
+         <image>
+            <Image url="@../images/search-user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="txtKeySearch" layoutX="171.0" layoutY="122.0" prefHeight="30.0" prefWidth="180.0" promptText="Enter ID" style="-fx-background-color: #0099ff; -fx-text-fill: white; -fx-prompt-text-fill: white;">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font></TextField>
+      <ImageView fx:id="btnRefresh" fitHeight="52.0" fitWidth="44.0" layoutX="40.0" layoutY="115.0" onMouseClicked="#getRefresh" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/update-user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="746.0" layoutY="15.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/exit.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
