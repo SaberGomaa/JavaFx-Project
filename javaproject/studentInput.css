@@ -1,0 +1,61 @@
+#btnSave {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: #33ec8b;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #337741 0%, #336d13 100%),
+        #337812,
+        #336923,
+        radial-gradient(center 50% 50%, radius 100%, #339713, #338c3c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+#btnSave:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #379d1d 0%, #3f9629 100%),
+        #33c320,
+        #26a507,
+        radial-gradient(center 50% 50%, radius 100%, #339713, #338c3c);
+}
+#btnSave:pressed {
+    -fx-padding: 15 20 18 20;
+    -fx-background-insets: 4 2 2 2,4 2 5 2, 4 2 6 2, 4 2 7 2;
+
+}
+#btnSave{
+    -fx-text-fill: white;
+    -fx-font-size:34px;
+}
+#btnClear {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: #33ec8b;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #700100 0%, #6C0000 100%),
+        #760000,
+        #6C0000,
+        radial-gradient(center 50% 50%, radius 100%, #e53221, #CC0000);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+#btnClear:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #e53221 0%, #990000 100%),
+        #760000,
+        #6C0000,
+        radial-gradient(center 50% 50%, radius 100%, #e53221, #bd2408);
+}
+#btnClear:pressed {
+    -fx-padding: 15 20 18 20;
+    -fx-background-insets: 4 2 2 2,4 2 5 2, 4 2 6 2, 4 2 7 2;
+
+}
+#btnClear{
+    -fx-text-fill: white;
+    -fx-font-size:34px;
+}
+

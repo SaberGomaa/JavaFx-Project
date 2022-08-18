@@ -1,0 +1,26 @@
+/*button:hover{
+    -fx-cursor:hand ;
+}*/
+
+.table-view {
+    -fx-background-color: #0099ff;
+    -fx-background-radius:14 14 0 0;
+    -fx-font-size:20px;
+    -fx-font-wieght:bold;    }
+.column-header-background{
+    -fx-background-color:  #0099ff;
+    -fx-background-radius:7;
+    -fx-background-insets: 0 0 10 0;
+}
+.table-view .column-header, .table-view .filler{
+    -fx-size:50px;
+    -fx-border-width: 0 0 10 0;
+    -fx-background-color:#0099ff;
+}
+
+.table-view .column-header .label {
+    -fx-font-size:18px;
+    -fx-font-wight:bold;
+}
+
+
