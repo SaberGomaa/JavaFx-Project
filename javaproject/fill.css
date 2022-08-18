@@ -1,0 +1,14 @@
+.button:hover{
+    -fx-text-fill: #0099ff ;
+    -fx-scale-x: 1.05 ;
+    -fx-scale-y: 1.05 ;
+    
+    -fx-effect: dropshadow( gaussian , rgb(255,255,255) , 10,0,0,1 ); 
+    
+    /*-fx-effect: innershadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );*/
+}
+.button:Pressed{
+    -fx-background-color:  #2f566f; 
+    
+    /*-fx-effect: innershadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );*/
+}

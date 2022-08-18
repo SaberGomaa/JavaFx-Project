@@ -1,0 +1,8 @@
+.button:hover{
+    -fx-text-fill: #0099ff ;
+    -fx-background-color:  #2f566f ;
+    -fx-font-size: 31 ;
+    -fx-border-color: #0099ff ;
+    -fx-font-weight: bold ;
+
+}

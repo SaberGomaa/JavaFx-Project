@@ -1,0 +1,101 @@
+/* Login css styling start here */
+.root{
+    -fx-background-color: 
+        #18252f;
+    /*        linear-gradient(#426ab7, #263e75),
+            linear-gradient(#0099ff, #223768);*/
+
+}
+/*#loginButton{
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-opacity: 0.3;
+}*/
+/*#loginButton{
+    -fx-padding: 18 15 15 1;
+    -fx-background-insets:0,0 0 5 0,0 0 6 0 ,0 0 7 0;
+    -fx-background-redius:8;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%,#18252f 0%,#903b12 100%),#18252f,#903b12,
+        redial-gradiend()
+}
+
+
+#loginButton:hover{
+    -fx-border-color: -fx-yellow;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}*/
+#loginButton {
+    -fx-border-radius: 15px;
+
+    -fx-background-color: 
+        #000000,
+        linear-gradient( #2f4b8f,#7ebcea ),
+        linear-gradient( #263e75,#426ab7 ),
+        linear-gradient( #223768,#0099ff );
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 15px;
+    -fx-padding: 8px;
+}
+#loginButton:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( one-pass-box , #0bf32d , 0, 0.75 , 0 , 1);
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#0099ff, #223768);
+}
+
+#cancelButton{
+    -fx-border-radius: 15px;
+    -fx-background-color: 
+        #000000,
+        linear-gradient( #2f4b8f,#7ebcea ),
+        linear-gradient( #263e75,#426ab7 ),
+        linear-gradient( #223768,#0099ff );
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 15px;
+    -fx-padding: 8px;
+}
+
+#cancelButton:hover{
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( one-pass-box , red , 0, 0.75 , 0 , 1);
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#0099ff, #223768);
+}
+#txtuserName{
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #0099ff;
+    -fx-background-color: #18252f;
+    -fx-background-radius: 15px;
+    -fx-border-color: #0099ff;
+    -fx-border-radius: 15px;
+    -fx-padding: 5px;
+}
+#txtuserName:hover{
+    -fx-prompt-text-fill: white;
+    -fx-border-color: white;
+
+}
+#txtPassword{
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #0099ff;
+    -fx-background-color: #18252f;
+    -fx-background-radius: 15px;
+    -fx-border-color: #0099ff;
+    -fx-border-radius: 15px;
+    -fx-padding: 5px;
+}
+#txtPassword:hover{
+    -fx-prompt-text-fill: white;
+    -fx-border-color: white;
+}
+
+/* Login css styling end here */
