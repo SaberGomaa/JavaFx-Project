@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="721.0" prefWidth="1041.0" style="-fx-background-color: #18252f;" stylesheets="@side_bare.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.register_course_Controller">
+   <children>
+      <Label layoutX="386.0" layoutY="60.0" prefHeight="59.0" prefWidth="308.0" text="Course Register" textFill="WHITE" AnchorPane.bottomAnchor="602.0" AnchorPane.leftAnchor="386.0" AnchorPane.rightAnchor="347.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <GridPane id="button" hgap="50.0" layoutX="300.0" layoutY="201.0" prefHeight="420.0" prefWidth="505.0" stylesheets="@fill.css" vgap="80.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="262.0" AnchorPane.topAnchor="201.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="188.0" minHeight="10.0" prefHeight="181.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="198.0" minHeight="10.0" prefHeight="189.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+           
+            <Button id="button" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#getDeleteView" prefHeight="220.0" prefWidth="220.0" style="-fx-background-color: #1d3b4e; -fx-border-color: #0099ff;" stylesheets="@../startform/fill.css" text="Delete " textFill="WHITE" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#getDeleteView" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/delete-user.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#getUpdateView" prefHeight="220.0" prefWidth="220.0" style="-fx-background-color: #1d3b4e; -fx-border-color: #0099ff;" stylesheets="@../startform/fill.css" text="Update " textFill="WHITE" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#getUpdateView" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/update-user.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#getSearchView" prefHeight="220.0" prefWidth="220.0" style="-fx-background-color: #1d3b4e; -fx-border-color: #0099ff;" stylesheets="@../startform/fill.css" text="Search" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#getSearchView" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/search-user.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#getAddView" prefHeight="220.0" prefWidth="220.0" style="-fx-background-color: #1d3b4e; -fx-border-color: #0099ff;" stylesheets="@../startform/fill.css" text="Add" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#getAddView" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/add-user.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1219.0" layoutY="20.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/exit.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="987.0" layoutY="33.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/exit.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
